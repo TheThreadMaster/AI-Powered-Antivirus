@@ -8,7 +8,7 @@ import pefile
 LOG_FILE = "antivirus_log.txt"
 DETAILED_LOG_FILE = "antivirus_detailed_log.txt"
 
-# Placeholder for virus signatures
+# Dictionary for known virus signature hashes
 VIRUS_SIGNATURES = {}
 
 def load_signatures(signature_file="virus_signatures.json"):
