@@ -1,10 +1,10 @@
-# AI Shield
+# AI-Powered-Antivirus
 
 A real-time antivirus dashboard combining ML-based threat detection, URL filtering, network monitoring, and sandbox analysis. Built with Next.js 16 and FastAPI.
 
 ## Overview
 
-AI Shield provides a comprehensive security monitoring interface with:
+AI-Powered-Antivirus provides a comprehensive security monitoring interface with:
 
 - **Real-time threat detection** via ML anomaly scoring and Snort IDS integration
 - **URL filtering** with WebShield risk assessment and blocking
@@ -96,7 +96,7 @@ AI_Shield/
 
 ## Quick Start
 
-👉 **New to AI Shield?** Start here: [QUICK-START.md](QUICK-START.md) - Simple step-by-step guide for beginners!
+👉 **New to AI-Powered-Antivirus?** Start here: [QUICK-START.md](QUICK-START.md) - Simple step-by-step guide for beginners!
 
 ## Installation
 

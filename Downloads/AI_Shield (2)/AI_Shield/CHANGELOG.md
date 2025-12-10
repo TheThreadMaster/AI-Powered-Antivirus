@@ -1,4 +1,4 @@
-# Changelog - AI Shield
+# Changelog - AI-Powered-Antivirus
 
 ## Recent Changes Summary
 

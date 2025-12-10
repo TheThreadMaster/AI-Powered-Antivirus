@@ -191,7 +191,7 @@ export default function Home() {
         <div className="space-y-4">
           <div className="mb-2 text-center">
             <h1 className="text-3xl font-bold tracking-tight bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
-              AI Shield Dashboard
+              AI-Powered-Antivirus Dashboard
             </h1>
             <p className="text-sm text-muted-foreground mt-1">Real-time threat monitoring and protection</p>
           </div>

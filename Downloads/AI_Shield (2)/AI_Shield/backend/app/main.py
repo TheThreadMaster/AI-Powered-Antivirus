@@ -67,7 +67,7 @@ class WSManager:
             self.disconnect(d)
 
 
-app = FastAPI(title="AI Shield Backend")
+app = FastAPI(title="AI-Powered-Antivirus Backend")
 
 origins = [
     os.getenv("FRONTEND_ORIGIN", "http://localhost:3000"),
@@ -1953,7 +1953,7 @@ def healthz():
 
 @app.get("/")
 def root():
-    return {"message": "AI Shield API", "docs": "/docs"}
+    return {"message": "AI-Powered-Antivirus API", "docs": "/docs"}
 
 
 # Voice command
