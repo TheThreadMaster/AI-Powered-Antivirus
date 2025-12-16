@@ -1,5 +1,0 @@
-# This file ensures the models directory is tracked by Git
-# Model files (*.pkl, *.json) are ignored but the directory structure is preserved
-
-
-
