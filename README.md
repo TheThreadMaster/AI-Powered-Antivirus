@@ -4,11 +4,23 @@ A real-time antivirus dashboard combining ML-based threat detection, URL filteri
 
 ## Dashboard Preview
 
-![AI-Powered Antivirus Dashboard](https://raw.githubusercontent.com/TheThreadMaster/AI-Powered-Antivirus/master/docs/images/dashboard.gif)
-
 *Real-time security monitoring dashboard showing threat detection, system metrics, and network activity*
 
+### Screenshot Gallery
+
+<div align="center">
+
+| Screenshot 1 | Screenshot 2 | Screenshot 3 |
+|:------------:|:------------:|:------------:|
+| ![Dashboard Screenshot 1](https://raw.githubusercontent.com/TheThreadMaster/AI-Powered-Antivirus/master/docs/images/1.png) | ![Dashboard Screenshot 2](https://raw.githubusercontent.com/TheThreadMaster/AI-Powered-Antivirus/master/docs/images/2.png) | ![Dashboard Screenshot 3](https://raw.githubusercontent.com/TheThreadMaster/AI-Powered-Antivirus/master/docs/images/3.png) |
+| Threat Detection Overview | System Metrics | Network Monitoring |
+| ![Dashboard Screenshot 4](https://raw.githubusercontent.com/TheThreadMaster/AI-Powered-Antivirus/master/docs/images/4.png) | ![Dashboard Screenshot 5](https://raw.githubusercontent.com/TheThreadMaster/AI-Powered-Antivirus/master/docs/images/5.png) | ![Dashboard Screenshot 6](https://raw.githubusercontent.com/TheThreadMaster/AI-Powered-Antivirus/master/docs/images/6.png) |
+| URL Filtering | Sandbox Analysis | Activity Logs |
+
+</div>
+
 ---
+
 
 
 ## Overview
@@ -407,6 +419,8 @@ Endpoint: `ws://localhost:8001/ws`
 - Advanced filtering and pagination
 - Filesystem event monitoring
 - System service packaging
+
+
 
 
 
