@@ -4,7 +4,7 @@ A real-time antivirus dashboard combining ML-based threat detection, URL filteri
 
 ## Dashboard Preview
 
-![AI-Powered Antivirus Dashboard](https://raw.githubusercontent.com/TheThreadMaster/AI-Powered-Antivirus/master/docs/images/dashboard.png)
+![AI-Powered Antivirus Dashboard](https://raw.githubusercontent.com/TheThreadMaster/AI-Powered-Antivirus/master/docs/images/dashboard.gif)
 
 *Real-time security monitoring dashboard showing threat detection, system metrics, and network activity*
 
@@ -407,5 +407,6 @@ Endpoint: `ws://localhost:8001/ws`
 - Advanced filtering and pagination
 - Filesystem event monitoring
 - System service packaging
+
 
 
