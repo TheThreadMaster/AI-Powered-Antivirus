@@ -1,8 +1,8 @@
-# AI Shield - Frontend Documentation
+# AI-Powered Antivirus - Frontend Documentation
 
 ## Overview
 
-The AI Shield frontend is built with **Next.js 16** (React 19) and TypeScript, providing a modern, responsive dashboard for real-time threat monitoring and security management.
+The AI-Powered Antivirus frontend is built with **Next.js 16** (React 19) and TypeScript, providing a modern, responsive dashboard for real-time threat monitoring and security management.
 
 ## Architecture
 
@@ -523,4 +523,5 @@ frontend/src/
 - Check `/api/scanner/status` endpoint
 - Verify scanner is running
 - Check for WebSocket events in console
+
 

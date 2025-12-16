@@ -1,8 +1,8 @@
-# AI Shield - Backend Documentation
+# AI-Powered Antivirus - Backend Documentation
 
 ## Overview
 
-The AI Shield backend is built with **FastAPI** (Python) and provides a comprehensive REST API and WebSocket server for real-time threat detection, file analysis, network monitoring, and security management.
+The AI-Powered Antivirus backend is built with **FastAPI** (Python) and provides a comprehensive REST API and WebSocket server for real-time threat detection, file analysis, network monitoring, and security management.
 
 ## Architecture
 
@@ -713,4 +713,5 @@ backend/
 - Check internet connectivity
 - Review API rate limits
 - Check cache directory permissions
+
 

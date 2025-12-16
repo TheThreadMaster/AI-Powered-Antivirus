@@ -1,11 +1,11 @@
-# Machine Learning Algorithms in AI Shield
+# Machine Learning Algorithms in AI-Powered Antivirus
 ## Detailed Technical Documentation
 
 ---
 
 ## Executive Summary
 
-AI Shield employs a hybrid machine learning approach combining **Isolation Forest** (unsupervised anomaly detection) with extensive feature engineering and heuristic-based analysis. The system uses **scikit-learn** for ML operations and implements a multi-layered detection pipeline that combines statistical analysis, pattern matching, and machine learning to identify malicious files.
+AI-Powered Antivirus employs a hybrid machine learning approach combining **Isolation Forest** (unsupervised anomaly detection) with extensive feature engineering and heuristic-based analysis. The system uses **scikit-learn** for ML operations and implements a multi-layered detection pipeline that combines statistical analysis, pattern matching, and machine learning to identify malicious files.
 
 ---
 
@@ -335,7 +335,7 @@ X_test_scaled = scaler.transform(X_test)       # Apply learned transformation
 
 ### 3.1 Multi-Layer Architecture
 
-AI Shield uses a **hybrid approach** combining:
+AI-Powered Antivirus uses a **hybrid approach** combining:
 
 1. **ML-Based Detection** (Isolation Forest)
 2. **Heuristic-Based Detection** (Rule-based)
@@ -620,7 +620,7 @@ python train_ml_model.py \
 
 ## 10. Conclusion
 
-AI Shield's machine learning approach uses **Isolation Forest** as the primary anomaly detection algorithm, combined with extensive feature engineering and heuristic-based analysis. The hybrid approach provides:
+AI-Powered Antivirus's machine learning approach uses **Isolation Forest** as the primary anomaly detection algorithm, combined with extensive feature engineering and heuristic-based analysis. The hybrid approach provides:
 
 - **Unsupervised Learning**: Works without extensive labeled data
 - **Real-Time Performance**: Fast inference suitable for scanning
@@ -642,5 +642,6 @@ The system's strength lies in combining ML-based detection with rule-based heuri
 
 **Document Version**: 1.0  
 **Last Updated**: 2025  
-**Author**: AI Shield Development Team
+**Author**: AI-Powered Antivirus Development Team
+
 
