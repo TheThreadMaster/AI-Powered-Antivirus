@@ -1,6 +1,15 @@
-# AI-Powered-Antivirus
+﻿# AI-Powered-Antivirus
 
 A real-time antivirus dashboard combining ML-based threat detection, URL filtering, network monitoring, and sandbox analysis. Built with Next.js 16 and FastAPI.
+
+## Dashboard Preview
+
+![AI-Powered Antivirus Dashboard](docs/images/dashboard.png)
+
+*Real-time security monitoring dashboard showing threat detection, system metrics, and network activity*
+
+---
+
 
 ## Overview
 
@@ -54,49 +63,49 @@ graph LR
 
 ```
 AI_Shield/
-├── backend/
-│   ├── app/
-│   │   ├── main.py              # FastAPI app, routes, WebSocket
-│   │   ├── store.py             # SQLModel database models
-│   │   └── services/
-│   │       ├── anomaly.py       # ML threat scoring
-│   │       ├── webshield.py     # URL risk evaluation
-│   │       ├── sandbox.py       # Behavior analysis
-│   │       └── snort.py         # IDS alert reader
-│   ├── run.py                   # Uvicorn server launcher
-│   ├── requirements.txt
-│   └── ai_shield.db             # SQLite database
-│
-└── frontend/
-    ├── src/
-    │   ├── app/
-    │   │   ├── layout.tsx        # Global layout
-    │   │   └── page.tsx          # Dashboard
-    │   ├── components/
-    │   │   └── RealtimeStatus.tsx # Connection indicator
-    │   ├── features/             # Dashboard panels
-    │   │   ├── overview/
-    │   │   ├── gauge/
-    │   │   ├── resources/
-    │   │   ├── threats/
-    │   │   ├── management/
-    │   │   ├── network/
-    │   │   ├── webshield/
-    │   │   ├── sandbox/
-    │   │   ├── scanner/
-    │   │   └── logs/
-    │   ├── lib/
-    │   │   ├── api.ts            # Axios HTTP client
-    │   │   └── ws.ts             # WebSocket handler
-    │   └── store/
-    │       └── app-store.ts      # Zustand state management
-    ├── next.config.ts
-    └── package.json
+â”œâ”€â”€ backend/
+â”‚   â”œâ”€â”€ app/
+â”‚   â”‚   â”œâ”€â”€ main.py              # FastAPI app, routes, WebSocket
+â”‚   â”‚   â”œâ”€â”€ store.py             # SQLModel database models
+â”‚   â”‚   â””â”€â”€ services/
+â”‚   â”‚       â”œâ”€â”€ anomaly.py       # ML threat scoring
+â”‚   â”‚       â”œâ”€â”€ webshield.py     # URL risk evaluation
+â”‚   â”‚       â”œâ”€â”€ sandbox.py       # Behavior analysis
+â”‚   â”‚       â””â”€â”€ snort.py         # IDS alert reader
+â”‚   â”œâ”€â”€ run.py                   # Uvicorn server launcher
+â”‚   â”œâ”€â”€ requirements.txt
+â”‚   â””â”€â”€ ai_shield.db             # SQLite database
+â”‚
+â””â”€â”€ frontend/
+    â”œâ”€â”€ src/
+    â”‚   â”œâ”€â”€ app/
+    â”‚   â”‚   â”œâ”€â”€ layout.tsx        # Global layout
+    â”‚   â”‚   â””â”€â”€ page.tsx          # Dashboard
+    â”‚   â”œâ”€â”€ components/
+    â”‚   â”‚   â””â”€â”€ RealtimeStatus.tsx # Connection indicator
+    â”‚   â”œâ”€â”€ features/             # Dashboard panels
+    â”‚   â”‚   â”œâ”€â”€ overview/
+    â”‚   â”‚   â”œâ”€â”€ gauge/
+    â”‚   â”‚   â”œâ”€â”€ resources/
+    â”‚   â”‚   â”œâ”€â”€ threats/
+    â”‚   â”‚   â”œâ”€â”€ management/
+    â”‚   â”‚   â”œâ”€â”€ network/
+    â”‚   â”‚   â”œâ”€â”€ webshield/
+    â”‚   â”‚   â”œâ”€â”€ sandbox/
+    â”‚   â”‚   â”œâ”€â”€ scanner/
+    â”‚   â”‚   â””â”€â”€ logs/
+    â”‚   â”œâ”€â”€ lib/
+    â”‚   â”‚   â”œâ”€â”€ api.ts            # Axios HTTP client
+    â”‚   â”‚   â””â”€â”€ ws.ts             # WebSocket handler
+    â”‚   â””â”€â”€ store/
+    â”‚       â””â”€â”€ app-store.ts      # Zustand state management
+    â”œâ”€â”€ next.config.ts
+    â””â”€â”€ package.json
 ```
 
 ## Quick Start
 
-👉 **New to AI-Powered-Antivirus?** Start here: [QUICK-START.md](QUICK-START.md) - Simple step-by-step guide for beginners!
+ðŸ‘‰ **New to AI-Powered-Antivirus?** Start here: [QUICK-START.md](QUICK-START.md) - Simple step-by-step guide for beginners!
 
 ## Installation
 
@@ -286,51 +295,51 @@ Base URL: `http://localhost:8001`
 
 ### Overview & Threats
 
-- `GET /api/overview` — System overview metrics
-- `GET /api/threats` — List threats (query: `limit`, `severity`, `source`, `action`)
-- `GET /api/threats/{id}` — Threat details
-- `POST /api/threats` — Create threat
-- `POST /api/threats/bulk-action` — Bulk threat actions
+- `GET /api/overview` â€” System overview metrics
+- `GET /api/threats` â€” List threats (query: `limit`, `severity`, `source`, `action`)
+- `GET /api/threats/{id}` â€” Threat details
+- `POST /api/threats` â€” Create threat
+- `POST /api/threats/bulk-action` â€” Bulk threat actions
 
 ### File Scanning
 
-- `POST /api/scan/file` — Scan uploaded or local file
-- `GET /api/scan/history` — Scan history
-- `DELETE /api/scan/history/{id}` — Delete scan record
-- `DELETE /api/scan/history` — Clear all history
+- `POST /api/scan/file` â€” Scan uploaded or local file
+- `GET /api/scan/history` â€” Scan history
+- `DELETE /api/scan/history/{id}` â€” Delete scan record
+- `DELETE /api/scan/history` â€” Clear all history
 
 ### Background Scanner
 
-- `GET /api/scan/live/status` — Scanner status and paths
-- `POST /api/scan/live/toggle` — Enable/disable scanner
-- `POST /api/scan/live/add-path` — Add scan path
-- `DELETE /api/scan/live/remove-path` — Remove scan path
+- `GET /api/scan/live/status` â€” Scanner status and paths
+- `POST /api/scan/live/toggle` â€” Enable/disable scanner
+- `POST /api/scan/live/add-path` â€” Add scan path
+- `DELETE /api/scan/live/remove-path` â€” Remove scan path
 
 ### URL Scanning
 
-- `POST /api/scan/url` — Classify URL risk
-- `GET /api/webshield/blocked` — Blocked URLs list
+- `POST /api/scan/url` â€” Classify URL risk
+- `GET /api/webshield/blocked` â€” Blocked URLs list
 
 ### Network
 
-- `GET /api/network/connections` — Active connections
-- `POST /api/network/block` — Block IP address
-- `GET /api/network/webshield/alerts` — WebShield alerts
-- `POST /api/network/webshield/block` — Block URL
-- `POST /api/network/webshield/toggle` — Enable/disable WebShield
+- `GET /api/network/connections` â€” Active connections
+- `POST /api/network/block` â€” Block IP address
+- `GET /api/network/webshield/alerts` â€” WebShield alerts
+- `POST /api/network/webshield/block` â€” Block URL
+- `POST /api/network/webshield/toggle` â€” Enable/disable WebShield
 
 ### Sandbox
 
-- `GET /api/sandbox/jobs` — List sandbox jobs
-- `POST /api/sandbox/run` — Start sandbox job
-- `GET /api/sandbox/{job_id}` — Job details
+- `GET /api/sandbox/jobs` â€” List sandbox jobs
+- `POST /api/sandbox/run` â€” Start sandbox job
+- `GET /api/sandbox/{job_id}` â€” Job details
 
 ### Logs & Health
 
-- `GET /api/logs` — Activity logs
-- `GET /api/logs/download` — Export logs
-- `GET /api/snort/alerts` — Snort IDS alerts
-- `GET /healthz` — Health check
+- `GET /api/logs` â€” Activity logs
+- `GET /api/logs/download` â€” Export logs
+- `GET /api/snort/alerts` â€” Snort IDS alerts
+- `GET /healthz` â€” Health check
 
 ## WebSocket Events
 
