@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "marked": "^17.0.1",
+    "puppeteer": "^24.32.0"
+  }
+}
